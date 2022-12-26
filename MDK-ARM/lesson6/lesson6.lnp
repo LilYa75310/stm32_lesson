@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"lesson6\startup_stm32f411xe.o"
+"lesson6\main.o"
+"lesson6\stm32f4xx_it.o"
+"lesson6\stm32f4xx_hal_msp.o"
+"lesson6\lcd.o"
+"lesson6\stm32f4xx_hal_tim.o"
+"lesson6\stm32f4xx_hal_tim_ex.o"
+"lesson6\stm32f4xx_hal_rcc.o"
+"lesson6\stm32f4xx_hal_rcc_ex.o"
+"lesson6\stm32f4xx_hal_flash.o"
+"lesson6\stm32f4xx_hal_flash_ex.o"
+"lesson6\stm32f4xx_hal_flash_ramfunc.o"
+"lesson6\stm32f4xx_hal_gpio.o"
+"lesson6\stm32f4xx_hal_dma_ex.o"
+"lesson6\stm32f4xx_hal_dma.o"
+"lesson6\stm32f4xx_hal_pwr.o"
+"lesson6\stm32f4xx_hal_pwr_ex.o"
+"lesson6\stm32f4xx_hal_cortex.o"
+"lesson6\stm32f4xx_hal.o"
+"lesson6\stm32f4xx_hal_exti.o"
+"lesson6\system_stm32f4xx.o"
+--strict --scatter "lesson6\lesson6.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "lesson6.map" -o lesson6\lesson6.axf
